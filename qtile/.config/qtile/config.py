@@ -173,7 +173,7 @@ screens = [
                     foreground = color_main_text,
                     text_open = "",
                     text_closed = "",
-                    fontsize= 14,
+                    fontsize= 22,
                     ),
                 widget.Spacer(5),
                 widget.GroupBox(
