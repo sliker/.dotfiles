@@ -5,6 +5,9 @@ local event = "BufWritePre" -- or "BufWritePost"
 local async = event == "BufWritePost"
 
 null_ls.setup({
+  sources = {
+    null_ls.builtins.formatting.prettierd,
+  },
   on_attach = function(client, bufnr)
     if client.supports_method("textDocument/formatting") then
       vim.keymap.set("n", "<Leader>f", function()
@@ -34,7 +37,7 @@ null_ls.setup({
 local prettier = require("prettier")
 
 prettier.setup({
-  bin = 'prettier', -- or `'prettierd'` (v0.23.3+)
+  bin = 'prettierd', -- or `'prettierd'` (v0.23.3+)
   filetypes = {
     "css",
     "graphql",
@@ -48,6 +51,5 @@ prettier.setup({
     "typescript",
     "typescriptreact",
     "yaml",
-    "python",
   },
 })
