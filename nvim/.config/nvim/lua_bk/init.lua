@@ -1,5 +1,0 @@
-require("lsp")
-require("treesitter")
--- require("saga")
-require("completition")
-require("telescope")
