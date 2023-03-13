@@ -50,5 +50,12 @@ return require('packer').startup(function(use)
   -- use('MunifTanjim/eslint.nvim')
 
   use('vim-airline/vim-airline')
+
   use('windwp/nvim-ts-autotag')
+  use('windwp/nvim-autopairs')
+
+  use {
+    'lewis6991/gitsigns.nvim',
+    -- tag = 'release' -- To use the latest release (do not use this if you run Neovim nightly or dev builds!)
+  }
 end)
