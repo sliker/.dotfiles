@@ -44,4 +44,8 @@ return require('packer').startup(function(use)
 		  {'rafamadriz/friendly-snippets'}, -- Optional
 	  }
   }
+  use('jose-elias-alvarez/null-ls.nvim')
+  use('MunifTanjim/prettier.nvim')
+  use('vim-airline/vim-airline')
+  use('windwp/nvim-ts-autotag')
 end)
