@@ -3,7 +3,7 @@ local lsp = require('lsp-zero').preset({
 })
 
 lsp.ensure_installed({
-	'tsserver',
+	'ts_ls',
 	'eslint',
 	'rust_analyzer',
   'pylsp'
