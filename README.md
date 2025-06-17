@@ -14,6 +14,8 @@ brew install prettierd
 brew install ripgrep
 ```
 
+- Install FiraCode font from https://www.nerdfonts.com/font-downloads
+
 ## Installation
 
 1. stow all the folders
